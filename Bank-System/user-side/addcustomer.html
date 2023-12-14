@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #00539f;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Customer</h1>
+    <form name="form1" method="post" action="addcustomer-action.php">
+        <label for="ncin">Numéro CIN:</label>
+        <input name="ncin" type="text" id="ncin"><br><br>
+        <label for="password">Password:</label>
+        <input name="password" type="password" id="password"><br><br>
+        <label for="nom">Name:</label>
+        <input name="name" type="text" id="name"><br><br>
+
+        <label for="adresse">Adresse:</label>
+        <input name="adresse" type="text" id="adresse"><br><br>
+
+        <label for="contactinfo">Contact Info:</label>
+        <input name="contactinfo" type="text" id="contactinfo"><br><br>
+
+        <input type="submit" name="Submit" value="Enregistrer">
+    </form>
+</body>
+</html>
